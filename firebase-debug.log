@@ -1,0 +1,16 @@
+[debug] [2025-09-19T01:35:18.929Z] ----------------------------------------------------------------------
+[debug] [2025-09-19T01:35:18.932Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mwambama\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2025-09-19T01:35:18.933Z] CLI Version:   14.16.0
+[debug] [2025-09-19T01:35:18.933Z] Platform:      win32
+[debug] [2025-09-19T01:35:18.933Z] Node Version:  v22.19.0
+[debug] [2025-09-19T01:35:18.933Z] Time:          Thu Sep 18 2025 20:35:18 GMT-0500 (Central Daylight Time)
+[debug] [2025-09-19T01:35:18.933Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-09-19T01:35:19.159Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-19T01:35:19.159Z] > authorizing via signed-in user (allysingi16@gmail.com)
+[info] i  emulators: Starting emulators: auth {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth"}}
+[debug] [2025-09-19T01:35:19.171Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-19T01:35:19.171Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-09-19T01:35:19.171Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-09-19T01:35:19.175Z] Emulator locator file path: C:\Users\mwambama\AppData\Local\Temp\hub-se329-expedia-clone.json
+[debug] [2025-09-19T01:35:19.175Z] [hub] writing locator at C:\Users\mwambama\AppData\Local\Temp\hub-se329-expedia-clone.json

@@ -61,7 +61,7 @@ export const Register = () => {
   };
 
   // oonCapture
-  function onCapture() {
+  useEffect(() => {
     window.recaptchaVerifier = new RecaptchaVerifier(
       "recaptcha-container",
       {
@@ -74,12 +74,12 @@ export const Register = () => {
       },
       auth
     );
-  }
+  }, []);
 
   //   Verify button
   function handleVerifyNumber() {
     document.querySelector("#nextButton").innerText = "Please wait...";
-    onCapture();
+    // onCapture();
     const phoneNumber = `+91${number}`;
     const appVerifier = window.recaptchaVerifier;
     if (number.length === 10) {
