@@ -44,7 +44,7 @@ export const Login = () => {
   }
   // console.log(user)
   //
-
+     // onCapture function removed from here to useEffect due to multiple calls of onCapture
   useEffect(() => {
     window.recaptchaVerifier = new RecaptchaVerifier(
       "recaptcha-container",
@@ -62,7 +62,7 @@ export const Login = () => {
 
   function handleVerifyNumber() {
     document.querySelector("#nextText").innerText = "Please wait...";
-    // onCapture();
+    // onCapture();  // remove this line to make 1 call of onCapture
     const phoneNumber = `+1${number}`;
     const appVerifier = window.recaptchaVerifier;
     if (number.length === 10) {

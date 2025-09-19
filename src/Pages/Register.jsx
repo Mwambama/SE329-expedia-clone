@@ -60,7 +60,7 @@ export const Register = () => {
     window.location = "/login";
   };
 
-  // oonCapture
+  // oonCapture function removed from here to useEffect due to multiple calls of onCapture
   useEffect(() => {
     window.recaptchaVerifier = new RecaptchaVerifier(
       "recaptcha-container",
@@ -79,7 +79,7 @@ export const Register = () => {
   //   Verify button
   function handleVerifyNumber() {
     document.querySelector("#nextButton").innerText = "Please wait...";
-    // onCapture();
+    // onCapture();   // Initialize reCAPTCHA  // makes 2 calls of on capture, remove it
     const phoneNumber = `+91${number}`;
     const appVerifier = window.recaptchaVerifier;
     if (number.length === 10) {
